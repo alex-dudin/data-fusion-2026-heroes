@@ -1,0 +1,8 @@
+__pycache__
+.vscode
+out_lns
+out_mip
+data/data_heroes.csv
+data/data_objects.csv
+data/dist_objects.csv
+data/dist_start.csv
