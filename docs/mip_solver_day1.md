@@ -233,10 +233,7 @@ $\sum_{i,k} v_{i,k}$
 Чтобы среди решений с одинаковым числом объектов выбирать более "аккуратные", добавлен маленький коэффициент:
 
 $$
-\max \left(
-\sum_{i,k} v_{i,k}
-+ \varepsilon \cdot \text{leftover}
-\right)
+\max \left(\sum_{i,k} v_{i,k} + \varepsilon \cdot \text{leftover} \right)
 $$
 
 где `epsilon` очень маленький (например, 0.000001).
@@ -323,13 +320,7 @@ $v_{i,k} \le \sum_p x_{p,i,k}$
 Для героя `k`:
 
 $$
-\text{used}_k
-=
-\text{start\_cost}_k
-+
-\text{arc\_cost}_k
-+
-100 \cdot \text{visit\_count}_k-99 \cdot a_k
+\text{used}_k = \text{start\_cost}_k + \text{arc\_cost}_k + 100 \cdot \text{visit\_count}_k-99 \cdot a_k
 $$
 
 И затем:
@@ -686,7 +677,7 @@ $$
 Добавить ограничение:
 
 $$
-\sum v_{i,k} = \text{opt_visited}
+\sum v_{i,k} = \text{optVisited}
 $$
 
 и потом максимизировать leftover.

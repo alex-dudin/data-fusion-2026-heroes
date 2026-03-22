@@ -75,13 +75,13 @@ $$
 Посещение объекта:
 
 $$
-v_{i,k} \in \{0,1\} \qquad \forall i \in V,\; k \in K
+v_{i,k} \in \{0,1\} \qquad \forall i \in V, k \in K
 $$
 
 Выбор дуги:
 
 $$
-x_{i,j,k} \in \{0,1\} \qquad \forall (i,j)\in A,\; k \in K
+x_{i,j,k} \in \{0,1\} \qquad \forall (i,j)\in A, k \in K
 $$
 
 ### Непрерывные
@@ -89,7 +89,7 @@ $$
 MTZ-переменные:
 
 $$
-u_{i,k} \ge 0 \qquad \forall i \in V,\; k \in K
+u_{i,k} \ge 0 \qquad \forall i \in V, k \in K
 $$
 
 ## Вспомогательные выражения
@@ -196,14 +196,14 @@ $$
 
 $$
 in_{i,k} \le v_{i,k}
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
 
 ### 6. Выход через объект возможен только если объект посещён
 
 $$
 out_{i,k} \le v_{i,k}
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
 
 ### 7. Запрет недопустимого старта
@@ -212,7 +212,7 @@ $$
 
 $$
 v_{i,k} \le in_{i,k}
-\qquad \forall k\in K,\; \forall i\in V \setminus S_k
+\qquad \forall k\in K, \forall i\in V \setminus S_k
 $$
 
 ### 8. Ограничение по очкам хода
@@ -238,21 +238,21 @@ $$
 
 $$
 u_{i,k} \ge v_{i,k}
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
 
 ### 10. Верхняя граница на MTZ-переменные
 
 $$
 u_{i,k} \le n\,v_{i,k}
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
 
 ### 11. MTZ-ограничения против подциклов
 
 $$
 u_{i,k} - u_{j,k} + n\,x_{i,j,k} \le n-1
-\qquad \forall (i,j)\in A,\; k\in K
+\qquad \forall (i,j)\in A, k\in K
 $$
 
 ## Области значений переменных
@@ -264,15 +264,15 @@ $$
 
 $$
 v_{i,k} \in \{0,1\}
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
 
 $$
 x_{i,j,k} \in \{0,1\}
-\qquad \forall (i,j)\in A,\; k\in K
+\qquad \forall (i,j)\in A, k\in K
 $$
 
 $$
 u_{i,k} \ge 0
-\qquad \forall i\in V,\; k\in K
+\qquad \forall i\in V, k\in K
 $$
