@@ -320,7 +320,7 @@ $v_{i,k} \le \sum_p x_{p,i,k}$
 Для героя `k`:
 
 $$
-\text{used}_k = \text{start\_cost}_k + \text{arc\_cost}_k + 100 \cdot \text{visit\_count}_k-99 \cdot a_k
+\text{used}_k = \text{startCost}_k + \text{arcCost}_k + 100 \cdot \text{visitCount}_k-99 \cdot a_k
 $$
 
 И затем:
