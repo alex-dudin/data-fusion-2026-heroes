@@ -329,9 +329,7 @@ $$
 +
 \text{arc\_cost}_k
 +
-100 \cdot \text{visit\_count}_k
--
-99 \cdot a_k
+100 \cdot \text{visit\_count}_k-99 \cdot a_k
 $$
 
 И затем:
@@ -688,7 +686,7 @@ $$
 Добавить ограничение:
 
 $$
-\sum v_{i,k} = \text{opt\_visited}
+\sum v_{i,k} = \text{opt_visited}
 $$
 
 и потом максимизировать leftover.

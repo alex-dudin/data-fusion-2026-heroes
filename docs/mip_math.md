@@ -229,9 +229,7 @@ $$
 +
 \sum_{(i,j)\in A} d_{ij}x_{i,j,k}
 +
-V_c \sum_{i\in V} v_{i,k}
--
-(V_c-1)a_k
+V_c \sum_{i\in V} v_{i,k}-(V_c-1)a_k
 \le c_k
 \qquad \forall k\in K
 $$
